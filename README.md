@@ -1,15 +1,35 @@
-# What is this?
+# Big Data Analytics Final Project - Property Assessment for Cook County, Illinois
+## **Overview**
+This project aims to develop a predictive model for assessing residential property values in **Cook County, Illinois**. Using historical property sales data and various property features, I applied  **machine learning techniques in R** to estimate property values and minimize prediction error.
 
-The github.dev web-based editor is a lightweight editing experience that runs entirely in your browser. You can navigate files and source code repositories from GitHub, and make and commit code changes.
+## **Project Objectives**
+- Predict the fair market value of **10,000 properties** based on given property features.
+- Utilize **historical property sales data (50,000 records)** to train predictive models.
+- Evaluate the model’s performance using **Mean Squared Error (MSE)**.
+- Deliver accurate property assessments to aid the **Cook County Assessor’s Office (CCAO)** in valuation tasks.
 
-There are two ways to go directly to a VS Code environment in your browser and start coding:
+## **Dataset Description**
+The project involves the following datasets:
+1. **predict_property_data.csv** – 10,000 properties requiring value prediction.
+2. **historic_property_data.csv** – 50,000 properties with known sale prices for model training.
+3. **codebook.csv** – Description of dataset variables.
 
-* Press the . key on any repository or pull request.
-* Swap `.com` with `.dev` in the URL. For example, this repo https://github.com/github/dev becomes http://github.dev/github/dev
+## **Methodology**
+1. **Data Preprocessing**
+   - Handling missing values and categorical variables.
+   - Exploratory Data Analysis (EDA) for feature selection.
+   
+2. **Model Selection & Training**
+   - Using regression and machine learning models covered in class.
+   - Feature engineering for improved predictions.
+   
+3. **Performance Evaluation**
+   - Computing **Mean Squared Error (MSE)** to measure prediction accuracy.
+   - Comparing results against actual property sale prices.
 
-Preview the gif below to get a quick demo of github.dev in action.
+## **Project Files**
+- 📄 `README.md` – This document.
+- 📜 `Project_Report.pdf` – Executive summary detailing methodology and results.
+- 📂 `assessed_value.csv` – Final property assessment file (contains `pid` and predicted `assessed_value`).
+- 📜 `Cook_county_MSE.ipynb` – R script for data preprocessing, modeling, and predictions.
 
-![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
-
-# Why?
-It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
